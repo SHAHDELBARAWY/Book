@@ -1,0 +1,75 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #f7ecde;
+}
+main h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+}
+main h2{
+    font-family: Righteous, cursive ;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to right, #007c06, #cbbd50, #ffbf00);
+    -webkit-background-clip : text;
+    color : transparent;
+
+}
+
+.bookmarker::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top:40px;
+    margin-left: 40%;
+    width: 20%;
+    height: 30%;
+    background-color: rgb(238, 176, 83);
+    z-index: -1;
+    transition: transform 0.3s ease;
+    Transform-origin : bottom;
+}
+
+.bookmarker:hover::before {
+    transform: scaley(2);
+    
+}
+.c-border{
+    border-top-style: dotted;
+    border-bottom-style: dotted ;
+}
+.font-input{
+    font-size: 16px;
+    font-family: 600;
+    line-height: 24px;
+}
+
+.btn{
+    background-color: rgb(195, 69, 41);
+    color: white;
+}
+.form-control {
+    display: block;
+    width: 100%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .375rem;
+    
+}
+.btn:hover{
+    background-color: #8e3200;
+    color: white;
+}

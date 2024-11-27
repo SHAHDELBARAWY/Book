@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <main class="interface py-5 position-relative">
+        <div class="container d-flex flex-column ">
+        <h1 id="title" class="py-2 position-relative bookmarker ">Bookmarker</h1>
+
+        <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column gap-4 c-border ">
+        <h2 class="color-line "><i class="fa-solid fa-bookmark "></i>  Bookmark Your Favorite Sites  <i class="fa-solid fa-bookmark"></i></h2>
+        <div class="content">
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="pb-2 fw-semibold font-input">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</br>
+                </label>
+                <input type="text" placeholder="Bookmark Name" class="form-control py-2 mb-4" id="bookmarkName">
+                <p id="msgName" class="alert alert-danger p-1 small w-50 d-none">
+                  It must start with a letter, be 3 to 20 characters long, and can only contain letters, numbers, hyphens,
+                  or underscores.
+                </p>
+            </div>
+            <div class="site-url w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkURL" class="pb-2 fw-semibold font-input">
+                   <i class="fa-solid fa-link pe-2"></i> Site URL </br>
+                 </label>
+                 <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+                 <p id="msgURL" class="alert alert-danger p-1 small w-50 d-none">
+                  It should be a number with up to 10 digits before the decimal point and up to 2 digits after the decimal
+                    (e.g., 100, 49.99, 1234567890.50)
+                 </p>
+            </div>
+            <div class="justify-content-center text-center">
+                <button class="btn mt-4 px-5 " id="submitBtn">Submit</button>
+            </div>
+            
+        </div>
+        </div>
+        <table id="website-list" class="table mt-4 text-center bg-light">
+             <thead>
+                <tr>
+                    <th class="t-n">index</th>
+                    <th class="t-n">Website Name</th>
+                    <th class="t-n">Visit</th>
+                    <th class="t-n">Delete</th>
+                </tr>
+             </thead>
+             <tbody>
+
+             </tbody>
+        </table>
+        </div>
+        
+        </main>
+        <script src="main.js"></script>
+</body>
+</html>
